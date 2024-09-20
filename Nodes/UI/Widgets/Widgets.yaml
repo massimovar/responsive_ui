@@ -1,30 +1,6 @@
 Name: Widgets
 Type: FolderType
 Children:
-- Name: Menu
-  Id: g=23b9119896403899171824d7a5445a9a
-  Supertype: Rectangle
-  ReferenceType: HasComponent
-  Children:
-  - Name: BorderThickness
-    Type: BaseDataVariableType
-    DataType: Size
-    ModellingRule: Optional
-  - Name: FillColor
-    Type: BaseDataVariableType
-    DataType: Color
-    ModellingRule: Optional
-    Value: "#171821"
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 3
 - Name: Widget
   Id: g=095ba07d33a6f71799bfa429d04f58fe
   Supertype: Rectangle
@@ -39,7 +15,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Color
     ModellingRule: Optional
-    Value: "#41bfb3"
+    Value: "#2f3e47"
   - Name: Label1
     Type: Label
     Children:
@@ -66,6 +42,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 30.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
   - Name: ns=3;GridLayoutProperties
     Type: GridLayoutProperties
     DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
@@ -131,7 +112,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Color
     ModellingRule: Optional
-    Value: "#2a8c82"
+    Value: "#2f3e47"
   - Name: Label1
     Type: Label
     Children:
@@ -158,6 +139,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 30.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
   - Name: ns=3;GridLayoutProperties
     Type: GridLayoutProperties
     DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
@@ -199,3 +185,4 @@ Children:
   - Name: PortraitLayout
     Type: BaseDataVariableType
     DataType: Boolean
+- File: MenuItems/MenuItems.yaml
