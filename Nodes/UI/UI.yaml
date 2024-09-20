@@ -225,6 +225,67 @@ Children:
           Value: 30.0
       - Name: ns=3;GridLayoutProperties
         Type: GridLayoutProperties
+        Children:
+        - Name: RowStart
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: -1
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 2
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+        - Name: ColumnSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 1
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 4
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 1
+        - Name: ColumnStart
+          Type: BaseDataVariableType
+          DataType: Int32
       - Name: FillColor
         Type: BaseDataVariableType
         DataType: Color
@@ -815,6 +876,35 @@ Children:
           DataType: Int32
           ModellingRule: Optional
           Value: 1
+        - Name: ColumnSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 1
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 3
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 1
       - Name: ScrollAxesEnabled
         Type: BaseDataVariableType
         DataType: ScrollAxesEnabledEnum
@@ -864,6 +954,92 @@ Children:
       - Name: ns=3;GridLayoutProperties
         Type: GridLayoutProperties
         DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
+        Children:
+        - Name: RowStart
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: -1
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 1
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+        - Name: ColumnSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 1
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 4
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 1
+        - Name: ColumnStart
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: -1
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Int32
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 2
       - Name: FillColor
         Type: BaseDataVariableType
         DataType: Color
@@ -914,6 +1090,33 @@ Children:
       ValueRank: OneDimension
       ArrayDimensions: [0]
       Value: ["100fr"]
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../PortraitLayout"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ValueRank: OneDimension
+          ArrayDimensions: [0]
+          Value: ["70fr","20fr","10fr"]
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ValueRank: OneDimension
+          ArrayDimensions: [0]
+          Value: ["100fr"]
   - Name: PortraitLayout
     Type: BaseDataVariableType
     DataType: Boolean
