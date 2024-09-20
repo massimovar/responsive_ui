@@ -1,21 +1,11 @@
 Name: Widgets
 Type: FolderType
 Children:
-- Name: MainMenu
+- Name: Menu
   Id: g=23b9119896403899171824d7a5445a9a
   Supertype: Rectangle
   ReferenceType: HasComponent
   Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 300.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 600.0
   - Name: BorderThickness
     Type: BaseDataVariableType
     DataType: Size
@@ -25,3 +15,187 @@ Children:
     DataType: Color
     ModellingRule: Optional
     Value: "#171821"
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+- Name: Widget
+  Id: g=095ba07d33a6f71799bfa429d04f58fe
+  Supertype: Rectangle
+  ReferenceType: HasComponent
+  Children:
+  - Name: BorderThickness
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1.0
+  - Name: FillColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#41bfb3"
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../..@BrowseName"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+  - Name: ns=3;GridLayoutProperties
+    Type: GridLayoutProperties
+    DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
+    Children:
+    - Name: ColumnSpan
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 1
+      Children:
+      - Name: ConditionalConverter2
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../PortraitLayout"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Int32
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 2
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Int32
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 1
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: CornerRadius
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 30.0
+  - Name: PortraitLayout
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Chart
+  Id: g=5f03d69f82eef5af6ae65ceee4e71528
+  Supertype: Rectangle
+  ReferenceType: HasComponent
+  Children:
+  - Name: BorderThickness
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1.0
+  - Name: FillColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#2a8c82"
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../..@BrowseName"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+  - Name: ns=3;GridLayoutProperties
+    Type: GridLayoutProperties
+    DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
+    Children:
+    - Name: ColumnSpan
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 1
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../PortraitLayout"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Int32
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 4
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Int32
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 1
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: PortraitLayout
+    Type: BaseDataVariableType
+    DataType: Boolean
