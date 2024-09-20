@@ -96,6 +96,16 @@ Children:
       DataType: Boolean
       ModellingRule: Optional
       Value: true
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1080.0
 - Name: MainMenuLandscape
   Id: g=ba268c4b3726c2770a216f39a4d1eeba
   Supertype: ColumnLayout
@@ -226,7 +236,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 296.0
+        Value: 302.0
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
@@ -263,7 +273,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 328.0
+        Value: 339.0
     - Name: Image3
       Type: Image
       Children:
@@ -290,8 +300,100 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 328.0
-  - Name: MenuItem1
+        Value: 339.0
+    - Name: FontScaling
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+  - Name: HomeBtn
+    Type: MenuItem
+    Children:
+    - Name: ScaleLayout1
+      Type: ScaleLayout
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#35b8e0"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Active"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              Value: "#36c0ea"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../ActiveColor"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../InactiveColor"
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../buttonLabel"
+      - Name: BtnIcon
+        Type: Image
+        Children:
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../btnIcon"
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ActiveColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#36c0ea"
+    - Name: InactiveColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#36c0ea00"
+    - Name: buttonLabel
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Home"
+    - Name: btnIcon
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/icons/home_24dp_WHITE.svg"
+  - Name: LogBtn
     Type: MenuItem
     Children:
     - Name: ScaleLayout1
@@ -372,12 +474,12 @@ Children:
     - Name: buttonLabel
       Type: BaseDataVariableType
       DataType: String
-      Value: "Home"
+      Value: "Logs"
     - Name: btnIcon
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "ns=7;%PROJECTDIR%/icons/home_24dp_WHITE.svg"
-  - Name: MenuItem2
+      Value: "ns=7;%PROJECTDIR%/icons/trending_up_24dp_WHITE.svg"
+  - Name: AlarmsBtn
     Type: MenuItem
     Children:
     - Name: ScaleLayout1
@@ -458,12 +560,12 @@ Children:
     - Name: buttonLabel
       Type: BaseDataVariableType
       DataType: String
-      Value: "Home"
+      Value: "Alarms"
     - Name: btnIcon
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "ns=7;%PROJECTDIR%/icons/home_24dp_WHITE.svg"
-  - Name: MenuItem3
+      Value: "ns=7;%PROJECTDIR%/icons/notifications_active_24dp_WHITE.svg"
+  - Name: SettingsBtn
     Type: MenuItem
     Children:
     - Name: ScaleLayout1
@@ -544,97 +646,11 @@ Children:
     - Name: buttonLabel
       Type: BaseDataVariableType
       DataType: String
-      Value: "Home"
+      Value: "Settings"
     - Name: btnIcon
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "ns=7;%PROJECTDIR%/icons/home_24dp_WHITE.svg"
-  - Name: MenuItem4
-    Type: MenuItem
-    Children:
-    - Name: ScaleLayout1
-      Type: ScaleLayout
-      Children:
-      - Name: Rectangle1
-        Type: Rectangle
-        Children:
-        - Name: FillColor
-          Type: BaseDataVariableType
-          DataType: Color
-          Value: "#35b8e0"
-          Children:
-          - Name: ConditionalConverter1
-            Type: ConditionalConverter
-            Children:
-            - Name: Condition
-              Type: BaseDataVariableType
-              DataType: Boolean
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../Active"
-            - Name: TrueValue
-              Type: BaseDataVariableType
-              DataType: Color
-              ReferenceType: HasParameter
-              Value: "#36c0ea"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../ActiveColor"
-            - Name: FalseValue
-              Type: BaseDataVariableType
-              DataType: Color
-              ReferenceType: HasParameter
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../InactiveColor"
-      - Name: Label1
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../buttonLabel"
-      - Name: BtnIcon
-        Type: Image
-        Children:
-        - Name: Path
-          Type: BaseDataVariableType
-          DataType: ResourceUri
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../btnIcon"
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-    - Name: ActiveColor
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#36c0ea"
-    - Name: InactiveColor
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#36c0ea00"
-    - Name: buttonLabel
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Home"
-    - Name: btnIcon
-      Type: BaseDataVariableType
-      DataType: ResourceUri
-      Value: "ns=7;%PROJECTDIR%/icons/home_24dp_WHITE.svg"
+      Value: "ns=7;%PROJECTDIR%/icons/settings_24dp_WHITE.svg"
 - Name: MainMenuPortrait
   Id: g=a4d5f07b599864a454bae5e33e60f014
   Supertype: RowLayout
@@ -840,6 +856,11 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 2
+    - Name: FontScaling
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
