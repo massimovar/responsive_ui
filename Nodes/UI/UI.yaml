@@ -197,11 +197,6 @@ Children:
       DataType: HorizontalAlignment
       ModellingRule: Optional
       Value: 3
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 3
     - Name: MainMenu1
       Type: Menu
       Children:
@@ -230,21 +225,6 @@ Children:
           Value: 30.0
       - Name: ns=3;GridLayoutProperties
         Type: GridLayoutProperties
-        DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
-        Children:
-        - Name: ColumnStart
-          Type: BaseDataVariableType
-          DataType: Int32
-          ModellingRule: Optional
-        - Name: RowStart
-          Type: BaseDataVariableType
-          DataType: Int32
-          ModellingRule: Optional
-        - Name: ColumnSpan
-          Type: BaseDataVariableType
-          DataType: Int32
-          ModellingRule: Optional
-          Value: 1
       - Name: FillColor
         Type: BaseDataVariableType
         DataType: Color
@@ -254,11 +234,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../LandscapeLayout"
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
@@ -279,12 +254,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
-    - Name: Rows
-      Type: BaseDataVariableType
-      DataType: String
-      ValueRank: OneDimension
-      ArrayDimensions: [0]
-      Value: ["100fr"]
     - Name: ScrollView1
       Type: ScrollView
       Children:
@@ -832,11 +801,6 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../../../PortraitLayout"
-      - Name: HorizontalAlignment
-        Type: BaseVariableType
-        DataType: HorizontalAlignment
-        ModellingRule: Optional
-        Value: 3
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
@@ -846,15 +810,11 @@ Children:
         Type: GridLayoutProperties
         DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
         Children:
-        - Name: ColumnStart
+        - Name: RowSpan
           Type: BaseDataVariableType
           DataType: Int32
           ModellingRule: Optional
           Value: 1
-        - Name: RowStart
-          Type: BaseDataVariableType
-          DataType: Int32
-          ModellingRule: Optional
       - Name: ScrollAxesEnabled
         Type: BaseDataVariableType
         DataType: ScrollAxesEnabledEnum
@@ -870,19 +830,14 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
-    - Name: SideDetails
-      Type: Menu
-      Children:
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
         Value: 3
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
-        ModellingRule: Optional
-        Value: 3
+    - Name: SideDetails
+      Type: Menu
+      Children:
       - Name: Label1
         Type: Label
         Children:
@@ -909,17 +864,6 @@ Children:
       - Name: ns=3;GridLayoutProperties
         Type: GridLayoutProperties
         DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
-        Children:
-        - Name: ColumnStart
-          Type: BaseDataVariableType
-          DataType: Int32
-          ModellingRule: Optional
-          Value: 2
-        - Name: RowStart
-          Type: BaseDataVariableType
-          DataType: Int32
-          ModellingRule: Optional
-          Value: 1
       - Name: FillColor
         Type: BaseDataVariableType
         DataType: Color
@@ -929,11 +873,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../LandscapeLayout"
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
@@ -954,6 +893,27 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Rows
+      Type: BaseDataVariableType
+      DataType: String
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: ["100fr"]
   - Name: PortraitLayout
     Type: BaseDataVariableType
     DataType: Boolean
