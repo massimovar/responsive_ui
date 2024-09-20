@@ -432,6 +432,32 @@ Children:
         Children:
         - Name: ScaleLayout1
           Type: ScaleLayout
+          Children:
+          - Name: Image1
+            Type: Image
+            Children:
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=7;%PROJECTDIR%/icons/6012637830385353744 (1).jpg"
+          - Name: Ellipse1
+            Type: Ellipse
+          - Name: Label1
+            Type: Label
+          - Name: Image2
+            Type: Image
+            Children:
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=7;%PROJECTDIR%/icons/settings_24dp_WHITE.svg"
+          - Name: Image3
+            Type: Image
+            Children:
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=7;%PROJECTDIR%/icons/logout_24dp_WHITE.svg"
         - Name: MenuItem1
           Type: MenuItem
           Children:

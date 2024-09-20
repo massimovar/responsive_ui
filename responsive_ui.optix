@@ -34,10 +34,10 @@ Project:
    Module: FTOptix.WebUI
    Version: 1.1
  Statistics:
-  TotalNodeCount: 894
-  Objects: 249
+  TotalNodeCount: 934
+  Objects: 259
   ObjectTypes: 7
-  Variables: 638
+  Variables: 668
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
