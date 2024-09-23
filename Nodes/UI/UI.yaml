@@ -253,1095 +253,67 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "{Session}/IsWeb"
-  - Name: GridLayout1
-    Type: GridLayout
+  - Name: VerticalLayout1
+    Type: ColumnLayout
     Children:
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 300.0
+      Value: 50.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 300.0
-    - Name: Columns
-      Type: BaseDataVariableType
-      DataType: String
-      ValueRank: OneDimension
-      ArrayDimensions: [0]
-      Value: ["20fr","60fr","20fr"]
+      Value: 50.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
       Value: 3
-    - Name: MainMenu1
-      Type: Menu
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: SearchBar
+      Type: Rectangle
       Children:
-      - Name: ns=3;GridLayoutProperties
-        Type: GridLayoutProperties
-        Children:
-        - Name: RowStart
-          Type: BaseDataVariableType
-          DataType: Int32
-          Value: -1
-          Children:
-          - Name: ConditionalConverter1
-            Type: ConditionalConverter
-            Children:
-            - Name: Condition
-              Type: BaseDataVariableType
-              DataType: Boolean
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../../PortraitLayout"
-            - Name: TrueValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 2
-            - Name: FalseValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-        - Name: ColumnSpan
-          Type: BaseDataVariableType
-          DataType: Int32
-          Value: 1
-          Children:
-          - Name: ConditionalConverter1
-            Type: ConditionalConverter
-            Children:
-            - Name: Condition
-              Type: BaseDataVariableType
-              DataType: Boolean
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../../PortraitLayout"
-            - Name: TrueValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 4
-            - Name: FalseValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 1
-        - Name: ColumnStart
-          Type: BaseDataVariableType
-          DataType: Int32
-      - Name: Visible
+      - Name: BorderThickness
         Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
-      - Name: BottomMargin
-        Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
-      - Name: RightMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-      - Name: ScaleLayout1
-        Type: ScaleLayout
-        Children:
-        - Name: PanelLoader1
-          Type: PanelLoader
-          Children:
-          - Class: Reference
-            Target: ns=3;i=478
-            Direction: Forward
-          - Name: Panel
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-            - Name: ConditionalConverter1
-              Type: ConditionalConverter
-              Children:
-              - Name: Condition
-                Type: BaseDataVariableType
-                DataType: Boolean
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../../LandscapeLayout"
-              - Name: TrueValue
-                Type: BaseDataVariableType
-                DataType: NodeId
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: "/Objects/responsive_ui/UI/Widgets/MenuItems/MainMenuLandscape"
-              - Name: FalseValue
-                Type: BaseDataVariableType
-                DataType: NodeId
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: "/Objects/responsive_ui/UI/Widgets/MenuItems/MainMenuPortrait"
-          - Name: CurrentPanel
-            Type: NodePointer
-            DataType: NodeId
-            AccessLevel: Read
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
-        - Name: FillMode
-          Type: BaseDataVariableType
-          DataType: FillModeEnum
-          ModellingRule: Optional
-          Value: 1
       - Name: FillColor
         Type: BaseDataVariableType
         DataType: Color
         ModellingRule: Optional
         Value: "#2f3e47"
-    - Name: ScrollView1
-      Type: ScrollView
-      Children:
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 300.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 300.0
-      - Name: Main
-        Type: GridLayout
-        Children:
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 300.0
-        - Name: Columns
-          Type: BaseDataVariableType
-          DataType: String
-          ValueRank: OneDimension
-          ArrayDimensions: [0]
-          Value: ["25fr","25fr","25fr","25fr"]
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 3
-        - Name: SearchBar
-          Type: Rectangle
-          Children:
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 2
-            - Name: VerticalAlignment
-              Type: BaseVariableType
-              DataType: VerticalAlignment
-              ModellingRule: Optional
-              Value: 2
-            - Name: FontSize
-              Type: BaseDataVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 30.0
-            - Name: TextColor
-              Type: BaseDataVariableType
-              DataType: Color
-              ModellingRule: Optional
-              Value: "#ffffff"
-          - Name: ns=3;GridLayoutProperties
-            Type: GridLayoutProperties
-            DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 4
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 50.0
-          - Name: CornerRadius
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 10.0
-          - Name: Button1
-            Type: Button
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Landscape"}
-            - Name: Width
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 116.0
-            - Name: LeftMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 20.0
-            - Name: TopMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 15.0
-            - Name: MouseClickEventHandler1
-              Type: EventHandler
-              Children:
-              - Name: ListenEventType
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-              - Name: MethodsToCall
-                Type: BaseObjectType
-                Children:
-                - Name: MethodContainer1
-                  Type: BaseObjectType
-                  Children:
-                  - Name: ns=2;ObjectPointer
-                    Type: NodePointer
-                    DataType: NodeId
-                    Value: "/Objects/Commands/VariableCommands"
-                    Children:
-                    - Name: Kind
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: "/Types/ObjectTypes/BaseObjectType"
-                  - Name: ns=2;Method
-                    Type: BaseDataVariableType
-                    DataType: String
-                    Value: "Set"
-                  - Name: InputArguments
-                    Type: BaseObjectType
-                    Children:
-                    - Name: VariableToModify
-                      Type: BaseDataVariableType
-                      DataType: VariablePointer
-                      Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../../../../../Width@NodeId"
-                    - Name: Value
-                      Type: BaseDataVariableType
-                      DataType: Size
-                      Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
-                      Value: 1920.0
-                    - Name: ArrayIndex
-                      Type: BaseDataVariableType
-                      DataType: UInt32
-                      Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
-                      ValueRank: ScalarOrOneDimension
-              - Name: EventArguments
-                Type: MouseClickEvent
-                Children:
-                - Name: EventId
-                  Type: PropertyType
-                  DataType: ByteString
-                - Name: EventType
-                  Type: PropertyType
-                  DataType: NodeId
-                - Name: SourceNode
-                  Type: PropertyType
-                  DataType: NodeId
-                - Name: SourceName
-                  Type: PropertyType
-                  DataType: String
-                - Name: Time
-                  Type: PropertyType
-                  DataType: UtcTime
-                - Name: ReceiveTime
-                  Type: PropertyType
-                  DataType: UtcTime
-                - Name: Message
-                  Type: PropertyType
-                  DataType: LocalizedText
-                - Name: Severity
-                  Type: PropertyType
-                  DataType: UInt16
-          - Name: Button2
-            Type: Button
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Portrait"}
-            - Name: Width
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 116.0
-            - Name: LeftMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 156.0
-            - Name: TopMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 15.0
-            - Name: MouseClickEventHandler1
-              Type: EventHandler
-              Children:
-              - Name: ListenEventType
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-              - Name: MethodsToCall
-                Type: BaseObjectType
-                Children:
-                - Name: MethodContainer1
-                  Type: BaseObjectType
-                  Children:
-                  - Name: ns=2;ObjectPointer
-                    Type: NodePointer
-                    DataType: NodeId
-                    Value: "/Objects/Commands/VariableCommands"
-                    Children:
-                    - Name: Kind
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: "/Types/ObjectTypes/BaseObjectType"
-                  - Name: ns=2;Method
-                    Type: BaseDataVariableType
-                    DataType: String
-                    Value: "Set"
-                  - Name: InputArguments
-                    Type: BaseObjectType
-                    Children:
-                    - Name: VariableToModify
-                      Type: BaseDataVariableType
-                      DataType: VariablePointer
-                      Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../../../../../Width@NodeId"
-                    - Name: Value
-                      Type: BaseDataVariableType
-                      DataType: Size
-                      Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
-                      Value: 600.0
-                    - Name: ArrayIndex
-                      Type: BaseDataVariableType
-                      DataType: UInt32
-                      Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
-                      ValueRank: ScalarOrOneDimension
-              - Name: EventArguments
-                Type: MouseClickEvent
-                Children:
-                - Name: EventId
-                  Type: PropertyType
-                  DataType: ByteString
-                - Name: EventType
-                  Type: PropertyType
-                  DataType: NodeId
-                - Name: SourceNode
-                  Type: PropertyType
-                  DataType: NodeId
-                - Name: SourceName
-                  Type: PropertyType
-                  DataType: String
-                - Name: Time
-                  Type: PropertyType
-                  DataType: UtcTime
-                - Name: ReceiveTime
-                  Type: PropertyType
-                  DataType: UtcTime
-                - Name: Message
-                  Type: PropertyType
-                  DataType: LocalizedText
-                - Name: Severity
-                  Type: PropertyType
-                  DataType: UInt16
-        - Name: Widget1
-          Type: Widget
-          Children:
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-            - Name: LeftMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: -2.0
-            - Name: RightMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-            - Name: TopMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 2.0
-            - Name: BottomMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-          - Name: GridLayoutProperties
-            Type: GridLayoutProperties
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              Value: 1
-              Children:
-              - Name: ConditionalConverter2
-                Type: ConditionalConverter
-                Children:
-                - Name: Condition
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../PortraitLayout"
-          - Name: PortraitLayout
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PortraitLayout"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-        - Name: Widget2
-          Type: Widget
-          Children:
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-          - Name: GridLayoutProperties
-            Type: GridLayoutProperties
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              Value: 1
-              Children:
-              - Name: ConditionalConverter2
-                Type: ConditionalConverter
-                Children:
-                - Name: Condition
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../PortraitLayout"
-          - Name: PortraitLayout
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PortraitLayout"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-        - Name: Widget3
-          Type: Widget
-          Children:
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-          - Name: GridLayoutProperties
-            Type: GridLayoutProperties
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              Value: 1
-              Children:
-              - Name: ConditionalConverter2
-                Type: ConditionalConverter
-                Children:
-                - Name: Condition
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../PortraitLayout"
-          - Name: PortraitLayout
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PortraitLayout"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-        - Name: Widget4
-          Type: Widget
-          Children:
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-          - Name: GridLayoutProperties
-            Type: GridLayoutProperties
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              Value: 1
-              Children:
-              - Name: ConditionalConverter2
-                Type: ConditionalConverter
-                Children:
-                - Name: Condition
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../PortraitLayout"
-          - Name: PortraitLayout
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PortraitLayout"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-        - Name: Trend
-          Type: Rectangle
-          Children:
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 2
-            - Name: VerticalAlignment
-              Type: BaseVariableType
-              DataType: VerticalAlignment
-              ModellingRule: Optional
-              Value: 2
-            - Name: FontSize
-              Type: BaseDataVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 30.0
-            - Name: TextColor
-              Type: BaseDataVariableType
-              DataType: Color
-              ModellingRule: Optional
-              Value: "#ffffff"
-          - Name: ns=3;GridLayoutProperties
-            Type: GridLayoutProperties
-            DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 4
-            - Name: ColumnStart
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 1
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 500.0
-          - Name: TopMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 30.0
-        - Name: HorizontalGap
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: VerticalGap
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: Chart1
-          Type: Chart
-          Children:
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-          - Name: PortraitLayout
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PortraitLayout"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: GridLayoutProperties
-            Type: GridLayoutProperties
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              Value: 1
-              Children:
-              - Name: ConditionalConverter1
-                Type: ConditionalConverter
-                Children:
-                - Name: Condition
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../PortraitLayout"
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-        - Name: Chart2
-          Type: Chart
-          Children:
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-          - Name: GridLayoutProperties
-            Type: GridLayoutProperties
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              Value: 1
-              Children:
-              - Name: ConditionalConverter1
-                Type: ConditionalConverter
-                Children:
-                - Name: Condition
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../PortraitLayout"
-          - Name: PortraitLayout
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PortraitLayout"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-        - Name: Chart3
-          Type: Chart
-          Children:
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-          - Name: PortraitLayout
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PortraitLayout"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: GridLayoutProperties
-            Type: GridLayoutProperties
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              Value: 1
-              Children:
-              - Name: ConditionalConverter1
-                Type: ConditionalConverter
-                Children:
-                - Name: Condition
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../PortraitLayout"
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-        - Name: Chart4
-          Type: Chart
-          Children:
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../..@BrowseName"
-          - Name: PortraitLayout
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PortraitLayout"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: GridLayoutProperties
-            Type: GridLayoutProperties
-            Children:
-            - Name: ColumnSpan
-              Type: BaseDataVariableType
-              DataType: Int32
-              Value: 1
-              Children:
-              - Name: ConditionalConverter1
-                Type: ConditionalConverter
-                Children:
-                - Name: Condition
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../PortraitLayout"
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#2f3e47"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
-        ModellingRule: Optional
-        Value: 3
       - Name: ns=3;GridLayoutProperties
         Type: GridLayoutProperties
         DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
         Children:
-        - Name: RowSpan
-          Type: BaseDataVariableType
-          DataType: Int32
-          ModellingRule: Optional
-          Value: 1
         - Name: ColumnSpan
           Type: BaseDataVariableType
           DataType: Int32
-          Value: 1
-          Children:
-          - Name: ConditionalConverter1
-            Type: ConditionalConverter
-            Children:
-            - Name: Condition
-              Type: BaseDataVariableType
-              DataType: Boolean
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../../PortraitLayout"
-            - Name: TrueValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 3
-            - Name: FalseValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 1
-      - Name: ScrollAxesEnabled
-        Type: BaseDataVariableType
-        DataType: ScrollAxesEnabledEnum
-        ModellingRule: Optional
-        Value: 2
-      - Name: ScrollBarStyle
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Default"
-      - Name: TopMargin
+          ModellingRule: Optional
+          Value: 4
+      - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
-      - Name: HorizontalAlignment
-        Type: BaseVariableType
-        DataType: HorizontalAlignment
+        Value: 50.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
         ModellingRule: Optional
-        Value: 3
-    - Name: SideDetails
-      Type: Menu
-      Children:
+        Value: 10.0
       - Name: Label1
         Type: Label
         Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"details"}
+          Value: {"LocaleId":"en-US","Text":"My responsive app"}
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment
@@ -1356,106 +328,18 @@ Children:
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 30.0
+          Value: 25.0
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
           Value: "#ffffff"
-      - Name: ns=3;GridLayoutProperties
-        Type: GridLayoutProperties
-        DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
-        Children:
-        - Name: RowStart
-          Type: BaseDataVariableType
-          DataType: Int32
-          Value: -1
-          Children:
-          - Name: ConditionalConverter1
-            Type: ConditionalConverter
-            Children:
-            - Name: Condition
-              Type: BaseDataVariableType
-              DataType: Boolean
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../../PortraitLayout"
-            - Name: TrueValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 1
-            - Name: FalseValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-        - Name: ColumnSpan
-          Type: BaseDataVariableType
-          DataType: Int32
-          Value: 1
-          Children:
-          - Name: ConditionalConverter1
-            Type: ConditionalConverter
-            Children:
-            - Name: Condition
-              Type: BaseDataVariableType
-              DataType: Boolean
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../../PortraitLayout"
-            - Name: TrueValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 4
-            - Name: FalseValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 1
-        - Name: ColumnStart
-          Type: BaseDataVariableType
-          DataType: Int32
-          Value: -1
-          Children:
-          - Name: ConditionalConverter1
-            Type: ConditionalConverter
-            Children:
-            - Name: Condition
-              Type: BaseDataVariableType
-              DataType: Boolean
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../../PortraitLayout"
-            - Name: TrueValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-            - Name: FalseValue
-              Type: BaseDataVariableType
-              DataType: Int32
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: 2
-      - Name: Visible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
-      - Name: BottomMargin
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
@@ -1469,86 +353,1542 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
-      - Name: LeftMargin
+        Value: 10.0
+      - Name: Button1
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Landscape"}
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 116.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: MouseClickEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/Commands/VariableCommands"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "Set"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: VariableToModify
+                  Type: BaseDataVariableType
+                  DataType: VariablePointer
+                  Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../../../Width@NodeId"
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+                  Value: 1920.0
+                - Name: ArrayIndex
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+                  ValueRank: ScalarOrOneDimension
+          - Name: EventArguments
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button2
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Portrait"}
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 116.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 156.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: MouseClickEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/Commands/VariableCommands"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "Set"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: VariableToModify
+                  Type: BaseDataVariableType
+                  DataType: VariablePointer
+                  Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../../../Width@NodeId"
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+                  Value: 600.0
+                - Name: ArrayIndex
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+                  ValueRank: ScalarOrOneDimension
+          - Name: EventArguments
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+    - Name: GridLayout1
+      Type: GridLayout
+      Children:
+      - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 300.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Columns
+        Type: BaseDataVariableType
+        DataType: String
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: ["20fr","80fr"]
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
         Value: 3
+      - Name: MainMenu1
+        Type: Menu
+        Children:
+        - Name: ns=3;GridLayoutProperties
+          Type: GridLayoutProperties
+          Children:
+          - Name: RowStart
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: -1
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../PortraitLayout"
+              - Name: TrueValue
+                Type: BaseDataVariableType
+                DataType: Int32
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: 2
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Int32
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+          - Name: ColumnSpan
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 1
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../PortraitLayout"
+              - Name: TrueValue
+                Type: BaseDataVariableType
+                DataType: Int32
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: 4
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Int32
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: 1
+          - Name: ColumnStart
+            Type: BaseDataVariableType
+            DataType: Int32
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: ScaleLayout1
+          Type: ScaleLayout
+          Children:
+          - Name: PanelLoader1
+            Type: PanelLoader
+            Children:
+            - Class: Reference
+              Target: ns=3;i=478
+              Direction: Forward
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+              - Name: ConditionalConverter1
+                Type: ConditionalConverter
+                Children:
+                - Name: Condition
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../LandscapeLayout"
+                - Name: TrueValue
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "/Objects/responsive_ui/UI/Widgets/MenuItems/MainMenuLandscape"
+                - Name: FalseValue
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "/Objects/responsive_ui/UI/Widgets/MenuItems/MainMenuPortrait"
+            - Name: CurrentPanel
+              Type: NodePointer
+              DataType: NodeId
+              AccessLevel: Read
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+          - Name: FillMode
+            Type: BaseDataVariableType
+            DataType: FillModeEnum
+            ModellingRule: Optional
+            Value: 1
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2f3e47"
+      - Name: ScrollView1
+        Type: ScrollView
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: Main
+          Type: GridLayout
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: Columns
+            Type: BaseDataVariableType
+            DataType: String
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+            Value: ["25fr","25fr","25fr","25fr"]
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: Widget1
+            Type: Widget
+            Children:
+            - Name: GridLayoutProperties
+              Type: GridLayoutProperties
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 1
+                Children:
+                - Name: ConditionalConverter2
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../PortraitLayout"
+            - Name: PortraitLayout
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: CircularGauge1
+              Type: CircularGauge
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Float
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Sine"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: MinValue
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: -100.0
+              - Name: MaxValue
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 100.0
+              - Name: WarningZones
+                Type: BaseObjectType
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 210.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 210.0
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: MajorTickCount
+                Type: BaseDataVariableType
+                DataType: Float
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: MinorTickCount
+                Type: BaseDataVariableType
+                DataType: Float
+                ModellingRule: Optional
+                Value: 2.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+          - Name: Widget2
+            Type: Widget
+            Children:
+            - Name: GridLayoutProperties
+              Type: GridLayoutProperties
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 1
+                Children:
+                - Name: ConditionalConverter2
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../PortraitLayout"
+            - Name: PortraitLayout
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: CircularGauge1
+              Type: CircularGauge
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Float
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Cosine"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: MinValue
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: -100.0
+              - Name: MaxValue
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 100.0
+              - Name: WarningZones
+                Type: BaseObjectType
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 210.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 210.0
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: MajorTickCount
+                Type: BaseDataVariableType
+                DataType: Float
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: MinorTickCount
+                Type: BaseDataVariableType
+                DataType: Float
+                ModellingRule: Optional
+                Value: 2.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+          - Name: Widget3
+            Type: Widget
+            Children:
+            - Name: GridLayoutProperties
+              Type: GridLayoutProperties
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 1
+                Children:
+                - Name: ConditionalConverter2
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../PortraitLayout"
+            - Name: PortraitLayout
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: CircularGauge1
+              Type: CircularGauge
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Float
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Ramp"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: MinValue
+                Type: BaseDataVariableType
+                DataType: Float
+              - Name: MaxValue
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 100.0
+              - Name: WarningZones
+                Type: BaseObjectType
+                Children:
+                - Name: WarningZone1
+                  Type: WarningZone
+                  Children:
+                  - Name: From
+                    Type: BaseDataVariableType
+                    DataType: Float
+                  - Name: To
+                    Type: BaseDataVariableType
+                    DataType: Float
+                    Value: 35.0
+                  - Name: Color
+                    Type: BaseDataVariableType
+                    DataType: Color
+                    Value: "#ffa500"
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 210.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 210.0
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: MajorTickCount
+                Type: BaseDataVariableType
+                DataType: Float
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: MinorTickCount
+                Type: BaseDataVariableType
+                DataType: Float
+                ModellingRule: Optional
+                Value: 4.0
+              - Name: Enabled
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: StartAngle
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -90.0
+              - Name: EndAngle
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 90.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: RightMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 70.0
+              - Name: BottomMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+          - Name: Widget4
+            Type: Widget
+            Children:
+            - Name: GridLayoutProperties
+              Type: GridLayoutProperties
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 1
+                Children:
+                - Name: ConditionalConverter2
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../PortraitLayout"
+            - Name: PortraitLayout
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: Sparkline1
+              Type: Sparkline
+              Children:
+              - Name: PenValue
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Sine"
+              - Name: TimeWindow
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:30.0000000"
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 200.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 200.0
+              - Name: PenColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#ffffff"
+              - Name: PenThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: RefreshTime
+                Type: BaseDataVariableType
+                DataType: Duration
+                ModellingRule: Optional
+                Value: "0:00:00:0.1000000"
+              - Name: YAxisMaximum
+                Type: BaseDataVariableType
+                DataType: Double
+                ModellingRule: Optional
+                Value: 120.0
+              - Name: YAxisMinimum
+                Type: BaseDataVariableType
+                DataType: Double
+                ModellingRule: Optional
+                Value: -120.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+          - Name: Trend
+            Type: Rectangle
+            Children:
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: ns=3;GridLayoutProperties
+              Type: GridLayoutProperties
+              DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                ModellingRule: Optional
+                Value: 4
+              - Name: ColumnStart
+                Type: BaseDataVariableType
+                DataType: Int32
+                ModellingRule: Optional
+                Value: 1
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 500.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: Trend1
+              Type: Trend
+              Children:
+              - Name: Pens
+                Type: BaseObjectType
+                Children:
+                - Name: TrendPen1
+                  Type: TrendPen
+                  DataType: BaseDataType
+                  Children:
+                  - Name: Thickness
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    Value: -1.0
+                  - Name: Enabled
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    Value: true
+                  - Name: Thresholds
+                    Type: BaseObjectType
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Sine"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                  - Name: Color
+                    Type: BaseDataVariableType
+                    DataType: Color
+                    ModellingRule: Optional
+                    Value: "#00ff00"
+                  - Name: Title
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ModellingRule: Optional
+                    Value: {"LocaleId":"en-US","Text":"Sine"}
+                  - Name: ns=3;YAxis
+                    Type: ValueAxis
+                    Children:
+                    - Name: MinValue
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: -100.0
+                    - Name: MaxValue
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: 100.0
+                    - Name: AutoScale
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: Interactive
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                    - Name: Position
+                      Type: BaseDataVariableType
+                      DataType: HorizontalPositionEnum
+                - Name: TrendPen2
+                  Type: TrendPen
+                  DataType: BaseDataType
+                  Children:
+                  - Name: Thickness
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    Value: -1.0
+                  - Name: Enabled
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    Value: true
+                  - Name: Thresholds
+                    Type: BaseObjectType
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Cosine"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                  - Name: Color
+                    Type: BaseDataVariableType
+                    DataType: Color
+                    ModellingRule: Optional
+                    Value: "#ffff00"
+                  - Name: Title
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ModellingRule: Optional
+                    Value: {"LocaleId":"en-US","Text":"Cosine"}
+                  - Name: ns=3;YAxis
+                    Type: ValueAxis
+                    Children:
+                    - Name: MinValue
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: -100.0
+                    - Name: MaxValue
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: 100.0
+                    - Name: AutoScale
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: Interactive
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                    - Name: Position
+                      Type: BaseDataVariableType
+                      DataType: HorizontalPositionEnum
+                - Name: TrendPen3
+                  Type: TrendPen
+                  DataType: BaseDataType
+                  Children:
+                  - Name: Thickness
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    Value: -1.0
+                  - Name: Enabled
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    Value: true
+                  - Name: Thresholds
+                    Type: BaseObjectType
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Ramp"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                  - Name: Color
+                    Type: BaseDataVariableType
+                    DataType: Color
+                    ModellingRule: Optional
+                    Value: "#add8e6"
+                  - Name: Title
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ModellingRule: Optional
+                    Value: {"LocaleId":"en-US","Text":"Ramp"}
+                  - Name: ns=3;YAxis
+                    Type: ValueAxis
+                    Children:
+                    - Name: MinValue
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: -100.0
+                    - Name: MaxValue
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: 100.0
+                    - Name: AutoScale
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                    - Name: Interactive
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                    - Name: Position
+                      Type: BaseDataVariableType
+                      DataType: HorizontalPositionEnum
+              - Class: Reference
+                Target: ns=3;i=1129
+                Direction: Forward
+              - Name: XAxis
+                Type: DateTimeAxis
+                Children:
+                - Name: Follow
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Window
+                  Type: BaseDataVariableType
+                  DataType: Duration
+                  Value: "0:00:00:30.0000000"
+                - Name: Interactive
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Time
+                  Type: BaseDataVariableType
+                  DataType: DateTime
+              - Name: YAxis
+                Type: ValueAxis
+                Children:
+                - Name: Position
+                  Type: BaseDataVariableType
+                  DataType: HorizontalPositionEnum
+                - Name: MinValue
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: -100.0
+                - Name: MaxValue
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  Value: 100.0
+                - Name: AutoScale
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                - Name: Interactive
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+              - Name: LegendVisible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+              - Class: Reference
+                Target: ns=3;i=1201
+                Direction: Forward
+              - Name: TimeRanges
+                Type: BaseObjectType
+              - Class: Reference
+                Target: ns=3;i=1209
+                Direction: Forward
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 400.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 400.0
+              - Name: ReferenceTimeZone
+                Type: BaseDataVariableType
+                DataType: ReferenceTimeZone
+                ModellingRule: Optional
+                Value: 1
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 150.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 50.0
+              - Name: RightMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 50.0
+              - Name: BottomMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 50.0
+              - Name: RefreshTime
+                Type: BaseDataVariableType
+                DataType: UInt32
+                ModellingRule: Optional
+                Value: 100
+          - Name: HorizontalGap
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: VerticalGap
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: Chart1
+            Type: Chart
+            Children:
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../..@BrowseName"
+            - Name: PortraitLayout
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: GridLayoutProperties
+              Type: GridLayoutProperties
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 1
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../PortraitLayout"
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+          - Name: Chart2
+            Type: Chart
+            Children:
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../..@BrowseName"
+            - Name: GridLayoutProperties
+              Type: GridLayoutProperties
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 1
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../PortraitLayout"
+            - Name: PortraitLayout
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+          - Name: Chart3
+            Type: Chart
+            Children:
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../..@BrowseName"
+            - Name: PortraitLayout
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: GridLayoutProperties
+              Type: GridLayoutProperties
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 1
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../PortraitLayout"
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+          - Name: Chart4
+            Type: Chart
+            Children:
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../..@BrowseName"
+            - Name: PortraitLayout
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PortraitLayout"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: GridLayoutProperties
+              Type: GridLayoutProperties
+              Children:
+              - Name: ColumnSpan
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 1
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../PortraitLayout"
+            - Name: FillColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#2f3e47"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: ns=3;GridLayoutProperties
+          Type: GridLayoutProperties
+          DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
+          Children:
+          - Name: RowSpan
+            Type: BaseDataVariableType
+            DataType: Int32
+            ModellingRule: Optional
+            Value: 1
+          - Name: ColumnSpan
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 1
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../PortraitLayout"
+              - Name: TrueValue
+                Type: BaseDataVariableType
+                DataType: Int32
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: 3
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Int32
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: 1
+        - Name: ScrollAxesEnabled
+          Type: BaseDataVariableType
+          DataType: ScrollAxesEnabledEnum
+          ModellingRule: Optional
+          Value: 2
+        - Name: ScrollBarStyle
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "Default"
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
-      - Name: ScaleLayout1
-        Type: ScaleLayout
+      - Name: Rows
+        Type: BaseDataVariableType
+        DataType: String
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: ["100fr"]
         Children:
-        - Name: PanelLoader1
-          Type: PanelLoader
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
           Children:
-          - Name: Panel
-            Type: NodePointer
-            DataType: NodeId
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
             Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-          - Name: CurrentPanel
-            Type: NodePointer
-            DataType: NodeId
-            AccessLevel: Read
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
-          - Class: Reference
-            Target: ns=3;i=478
-            Direction: Forward
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: Rows
-      Type: BaseDataVariableType
-      DataType: String
-      ValueRank: OneDimension
-      ArrayDimensions: [0]
-      Value: ["100fr"]
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../PortraitLayout"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ValueRank: OneDimension
-          ArrayDimensions: [0]
-          Value: ["70fr","20fr","10fr"]
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ValueRank: OneDimension
-          ArrayDimensions: [0]
-          Value: ["100fr"]
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../PortraitLayout"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+            Value: ["70fr","20fr","10fr"]
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+            Value: ["100fr"]
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
 - File: Screens/Screens.yaml
 - Name: FriendlyDark1
   Type: StyleSheet
@@ -2102,10 +2442,22 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         Value: -1.0
-      - Name: HandleColor
+      - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#f7f7f7"
+        Value: "#ffffff"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Roboto"
+      - Name: HandleSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 25.0
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#253138"
   - Name: NavigationPanelStyles
     Type: BaseObjectType
     Children:
@@ -2116,6 +2468,15 @@ Children:
     Children:
     - Name: Default
       Type: ChartStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2f3e47"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
   - Name: DataListStyles
     Type: BaseObjectType
     Children:
