@@ -688,67 +688,80 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
-            - Name: CircularGauge1
-              Type: CircularGauge
-              Children:
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Float
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Sine"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
-              - Name: MinValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: -100.0
-              - Name: MaxValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 100.0
-              - Name: WarningZones
-                Type: BaseObjectType
-              - Name: Width
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 210.0
-              - Name: Height
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 210.0
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
-                Value: 2
-              - Name: HorizontalAlignment
-                Type: BaseVariableType
-                DataType: HorizontalAlignment
-                ModellingRule: Optional
-                Value: 2
-              - Name: MajorTickCount
-                Type: BaseDataVariableType
-                DataType: Float
-                ModellingRule: Optional
-                Value: 5.0
-              - Name: MinorTickCount
-                Type: BaseDataVariableType
-                DataType: Float
-                ModellingRule: Optional
-                Value: 2.0
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
+            - Name: ScaleLayout1
+              Type: ScaleLayout
+              Children:
+              - Name: CircularGauge1
+                Type: CircularGauge
+                Children:
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Sine"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: MinValue
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  Value: -100.0
+                - Name: MaxValue
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  Value: 100.0
+                - Name: WarningZones
+                  Type: BaseObjectType
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 210.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 210.0
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: MajorTickCount
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  ModellingRule: Optional
+                  Value: 5.0
+                - Name: MinorTickCount
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  ModellingRule: Optional
+                  Value: 2.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
           - Name: Widget2
             Type: Widget
             Children:
@@ -795,67 +808,80 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
-            - Name: CircularGauge1
-              Type: CircularGauge
-              Children:
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Float
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Cosine"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
-              - Name: MinValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: -100.0
-              - Name: MaxValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 100.0
-              - Name: WarningZones
-                Type: BaseObjectType
-              - Name: Width
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 210.0
-              - Name: Height
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 210.0
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
-                Value: 2
-              - Name: HorizontalAlignment
-                Type: BaseVariableType
-                DataType: HorizontalAlignment
-                ModellingRule: Optional
-                Value: 2
-              - Name: MajorTickCount
-                Type: BaseDataVariableType
-                DataType: Float
-                ModellingRule: Optional
-                Value: 5.0
-              - Name: MinorTickCount
-                Type: BaseDataVariableType
-                DataType: Float
-                ModellingRule: Optional
-                Value: 2.0
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
+            - Name: ScaleLayout1
+              Type: ScaleLayout
+              Children:
+              - Name: CircularGauge1
+                Type: CircularGauge
+                Children:
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Cosine"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: MinValue
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  Value: -100.0
+                - Name: MaxValue
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  Value: 100.0
+                - Name: WarningZones
+                  Type: BaseObjectType
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 210.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 210.0
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: MajorTickCount
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  ModellingRule: Optional
+                  Value: 5.0
+                - Name: MinorTickCount
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  ModellingRule: Optional
+                  Value: 2.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
           - Name: Widget3
             Type: Widget
             Children:
@@ -902,113 +928,126 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
-            - Name: CircularGauge1
-              Type: CircularGauge
-              Children:
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Float
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Ramp"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
-              - Name: MinValue
-                Type: BaseDataVariableType
-                DataType: Float
-              - Name: MaxValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 100.0
-              - Name: WarningZones
-                Type: BaseObjectType
-                Children:
-                - Name: WarningZone1
-                  Type: WarningZone
-                  Children:
-                  - Name: From
-                    Type: BaseDataVariableType
-                    DataType: Float
-                  - Name: To
-                    Type: BaseDataVariableType
-                    DataType: Float
-                    Value: 35.0
-                  - Name: Color
-                    Type: BaseDataVariableType
-                    DataType: Color
-                    Value: "#ffa500"
-              - Name: Width
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 210.0
-              - Name: Height
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 210.0
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
-                Value: 2
-              - Name: HorizontalAlignment
-                Type: BaseVariableType
-                DataType: HorizontalAlignment
-                ModellingRule: Optional
-                Value: 2
-              - Name: MajorTickCount
-                Type: BaseDataVariableType
-                DataType: Float
-                ModellingRule: Optional
-                Value: 5.0
-              - Name: MinorTickCount
-                Type: BaseDataVariableType
-                DataType: Float
-                ModellingRule: Optional
-                Value: 4.0
-              - Name: Enabled
-                Type: BaseDataVariableType
-                DataType: Boolean
-                ModellingRule: Optional
-                Value: true
-              - Name: StartAngle
-                Type: BaseDataVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: -90.0
-              - Name: EndAngle
-                Type: BaseDataVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 90.0
-              - Name: LeftMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-              - Name: RightMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-              - Name: TopMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 70.0
-              - Name: BottomMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
+            - Name: ScaleLayout1
+              Type: ScaleLayout
+              Children:
+              - Name: CircularGauge1
+                Type: CircularGauge
+                Children:
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Ramp"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: MinValue
+                  Type: BaseDataVariableType
+                  DataType: Float
+                - Name: MaxValue
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  Value: 100.0
+                - Name: WarningZones
+                  Type: BaseObjectType
+                  Children:
+                  - Name: WarningZone1
+                    Type: WarningZone
+                    Children:
+                    - Name: From
+                      Type: BaseDataVariableType
+                      DataType: Float
+                    - Name: To
+                      Type: BaseDataVariableType
+                      DataType: Float
+                      Value: 35.0
+                    - Name: Color
+                      Type: BaseDataVariableType
+                      DataType: Color
+                      Value: "#ffa500"
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 210.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 210.0
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: MajorTickCount
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  ModellingRule: Optional
+                  Value: 5.0
+                - Name: MinorTickCount
+                  Type: BaseDataVariableType
+                  DataType: Float
+                  ModellingRule: Optional
+                  Value: 4.0
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+                - Name: StartAngle
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -90.0
+                - Name: EndAngle
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 90.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: BottomMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
           - Name: Widget4
             Type: Widget
             Children:
@@ -1055,70 +1094,83 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
-            - Name: Sparkline1
-              Type: Sparkline
-              Children:
-              - Name: PenValue
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Sine"
-              - Name: TimeWindow
-                Type: BaseDataVariableType
-                DataType: Duration
-                Value: "0:00:00:30.0000000"
-              - Name: Width
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 200.0
-              - Name: Height
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 200.0
-              - Name: PenColor
-                Type: BaseDataVariableType
-                DataType: Color
-                ModellingRule: Optional
-                Value: "#ffffff"
-              - Name: PenThickness
-                Type: BaseDataVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 5.0
-              - Name: RefreshTime
-                Type: BaseDataVariableType
-                DataType: Duration
-                ModellingRule: Optional
-                Value: "0:00:00:0.1000000"
-              - Name: YAxisMaximum
-                Type: BaseDataVariableType
-                DataType: Double
-                ModellingRule: Optional
-                Value: 120.0
-              - Name: YAxisMinimum
-                Type: BaseDataVariableType
-                DataType: Double
-                ModellingRule: Optional
-                Value: -120.0
-              - Name: HorizontalAlignment
-                Type: BaseVariableType
-                DataType: HorizontalAlignment
-                ModellingRule: Optional
-                Value: 2
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
-                Value: 2
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
+            - Name: ScaleLayout1
+              Type: ScaleLayout
+              Children:
+              - Name: Sparkline1
+                Type: Sparkline
+                Children:
+                - Name: PenValue
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/responsive_ui/NetLogic/VariablesSimulator/Sine"
+                - Name: TimeWindow
+                  Type: BaseDataVariableType
+                  DataType: Duration
+                  Value: "0:00:00:30.0000000"
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 200.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 200.0
+                - Name: PenColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: PenThickness
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 5.0
+                - Name: RefreshTime
+                  Type: BaseDataVariableType
+                  DataType: Duration
+                  ModellingRule: Optional
+                  Value: "0:00:00:0.1000000"
+                - Name: YAxisMaximum
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  ModellingRule: Optional
+                  Value: 120.0
+                - Name: YAxisMinimum
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  ModellingRule: Optional
+                  Value: -120.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
           - Name: Trend
             Type: Rectangle
             Children:
