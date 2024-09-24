@@ -499,6 +499,7 @@ Children:
                 DataType: Int32
                 ReferenceType: HasParameter
                 ModellingRule: Optional
+                Value: 1
           - Name: ColumnSpan
             Type: BaseDataVariableType
             DataType: Int32
@@ -521,13 +522,12 @@ Children:
                 DataType: Int32
                 ReferenceType: HasParameter
                 ModellingRule: Optional
-                Value: 4
+                Value: 2
               - Name: FalseValue
                 Type: BaseDataVariableType
                 DataType: Int32
                 ReferenceType: HasParameter
                 ModellingRule: Optional
-                Value: 1
           - Name: ColumnStart
             Type: BaseDataVariableType
             DataType: Int32
@@ -1201,7 +1201,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: Int32
                 ModellingRule: Optional
-                Value: 1
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -1619,6 +1618,16 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 70.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 3
           - Name: Chart2
             Type: Chart
             Children:
@@ -1740,6 +1749,16 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 65.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 3
           - Name: Chart3
             Type: Chart
             Children:
@@ -1866,6 +1885,16 @@ Children:
                   DataType: String
                   ModellingRule: Optional
                   Value: "PieChartStyle1"
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 3
           - Name: Chart4
             Type: Chart
             Children:
@@ -1992,6 +2021,16 @@ Children:
                   DataType: String
                   ModellingRule: Optional
                   Value: "HistogramChartStyle1"
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 3
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
@@ -2033,7 +2072,7 @@ Children:
                 DataType: Int32
                 ReferenceType: HasParameter
                 ModellingRule: Optional
-                Value: 3
+                Value: 2
               - Name: FalseValue
                 Type: BaseDataVariableType
                 DataType: Int32
