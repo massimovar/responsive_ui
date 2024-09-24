@@ -522,15 +522,12 @@ Children:
                 DataType: Int32
                 ReferenceType: HasParameter
                 ModellingRule: Optional
-                Value: 2
+                Value: 4
               - Name: FalseValue
                 Type: BaseDataVariableType
                 DataType: Int32
                 ReferenceType: HasParameter
                 ModellingRule: Optional
-          - Name: ColumnStart
-            Type: BaseDataVariableType
-            DataType: Int32
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
@@ -757,16 +754,6 @@ Children:
                   DataType: Float
                   ModellingRule: Optional
                   Value: 2.0
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 3
-            - Name: VerticalAlignment
-              Type: BaseVariableType
-              DataType: VerticalAlignment
-              ModellingRule: Optional
-              Value: 3
           - Name: Widget2
             Type: Widget
             Children:
@@ -877,16 +864,6 @@ Children:
                   DataType: Float
                   ModellingRule: Optional
                   Value: 2.0
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 3
-            - Name: VerticalAlignment
-              Type: BaseVariableType
-              DataType: VerticalAlignment
-              ModellingRule: Optional
-              Value: 3
           - Name: Widget3
             Type: Widget
             Children:
@@ -1043,16 +1020,6 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 3
-            - Name: VerticalAlignment
-              Type: BaseVariableType
-              DataType: VerticalAlignment
-              ModellingRule: Optional
-              Value: 3
           - Name: Widget4
             Type: Widget
             Children:
@@ -1166,16 +1133,6 @@ Children:
                   DataType: VerticalAlignment
                   ModellingRule: Optional
                   Value: 2
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 3
-            - Name: VerticalAlignment
-              Type: BaseVariableType
-              DataType: VerticalAlignment
-              ModellingRule: Optional
-              Value: 3
           - Name: Trend
             Type: Rectangle
             Children:
@@ -1622,12 +1579,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 3
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
-                Value: 3
+                Value: 2
           - Name: Chart2
             Type: Chart
             Children:
@@ -1753,12 +1705,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 3
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
-                Value: 3
+                Value: 2
           - Name: Chart3
             Type: Chart
             Children:
@@ -1889,12 +1836,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 3
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
-                Value: 3
+                Value: 2
           - Name: Chart4
             Type: Chart
             Children:
@@ -2025,12 +1967,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 3
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
-                Value: 3
+                Value: 2
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
