@@ -410,12 +410,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 25.0
+          Value: 35.0
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
           Value: "#ffffff"
+        - Name: FontFamily
+          Type: BaseDataVariableType
+          DataType: Font
+          ModellingRule: Optional
+          Value: "Handlee"
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
