@@ -1669,6 +1669,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
         - Name: VerticalAlignment
           Type: BaseVariableType
           DataType: VerticalAlignment
@@ -1762,7 +1767,7 @@ Children:
             ReferenceType: HasParameter
             ValueRank: OneDimension
             ArrayDimensions: [0]
-            Value: ["70fr","20fr","10fr"]
+            Value: ["65fr","15fr"]
           - Name: FalseValue
             Type: BaseDataVariableType
             DataType: String
