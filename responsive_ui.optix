@@ -66,15 +66,15 @@ Project:
    Module: FTOptix.WebUI.Net
    Version: 1.1
  Statistics:
-  TotalNodeCount: 1191
-  Objects: 281
+  TotalNodeCount: 1269
+  Objects: 289
   ObjectTypes: 8
-  Variables: 902
+  Variables: 972
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
-  References: 11
+  References: 15
   ReferenceTypes: 0
-  Files: 22
+  Files: 24
  Nodes:
  - File: Nodes/responsive_ui.yaml

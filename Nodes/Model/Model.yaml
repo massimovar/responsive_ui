@@ -1,2 +1,5 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- File: Chart/Chart.yaml
+- File: Chart1/Chart1.yaml

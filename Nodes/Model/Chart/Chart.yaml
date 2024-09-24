@@ -1,0 +1,17 @@
+Name: Chart
+Id: g=3e2f0ddaedf9f056ce08f1ab515b946c
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=6f1f6a83e9d206f64d4f4f504b9b1ece
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 42
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 20
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 38

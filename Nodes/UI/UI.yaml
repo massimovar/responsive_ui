@@ -1496,17 +1496,6 @@ Children:
           - Name: Chart1
             Type: Chart
             Children:
-            - Name: Label1
-              Type: Label
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../..@BrowseName"
             - Name: PortraitLayout
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1550,20 +1539,84 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
+            - Name: ScaleLayout1
+              Type: ScaleLayout
+              Children:
+              - Name: PieChart1
+                Type: PieChart
+                Children:
+                - Name: Model
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/responsive_ui/Model/Chart"
+                  Children:
+                  - Name: ItemKind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Objects/responsive_ui/Model/Chart/Variable1"
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                - Name: Label
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}@BrowseName"
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}"
+                - Class: Reference
+                  Target: ns=3;i=1104
+                  Direction: Forward
+                - Name: Item
+                  Type: Alias
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Objects/responsive_ui/Model/Chart/Variable1"
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 3
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 3
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: BottomMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
           - Name: Chart2
             Type: Chart
             Children:
-            - Name: Label1
-              Type: Label
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../..@BrowseName"
             - Name: GridLayoutProperties
               Type: GridLayoutProperties
               Children:
@@ -1607,20 +1660,84 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
+            - Name: ScaleLayout1
+              Type: ScaleLayout
+              Children:
+              - Name: HistogramChart1
+                Type: HistogramChart
+                Children:
+                - Name: Model
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/responsive_ui/Model/Chart"
+                  Children:
+                  - Name: ItemKind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Objects/responsive_ui/Model/Chart/Variable1"
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                - Name: Label
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}@BrowseName"
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}"
+                - Class: Reference
+                  Target: ns=3;i=1105
+                  Direction: Forward
+                - Name: Item
+                  Type: Alias
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Objects/responsive_ui/Model/Chart/Variable1"
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 3
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 3
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 50.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 50.0
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 50.0
+                - Name: BottomMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 65.0
           - Name: Chart3
             Type: Chart
             Children:
-            - Name: Label1
-              Type: Label
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../..@BrowseName"
             - Name: PortraitLayout
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1664,20 +1781,89 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
+            - Name: ScaleLayout1
+              Type: ScaleLayout
+              Children:
+              - Name: PieChart1
+                Type: PieChart
+                Children:
+                - Name: Model
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/responsive_ui/Model/Chart1"
+                  Children:
+                  - Name: ItemKind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Objects/responsive_ui/Model/Chart/Variable1"
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                - Name: Label
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}@BrowseName"
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}"
+                - Class: Reference
+                  Target: ns=3;i=1104
+                  Direction: Forward
+                - Name: Item
+                  Type: Alias
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Objects/responsive_ui/Model/Chart/Variable1"
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 3
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 3
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: BottomMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: Style
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ModellingRule: Optional
+                  Value: "PieChartStyle1"
           - Name: Chart4
             Type: Chart
             Children:
-            - Name: Label1
-              Type: Label
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../..@BrowseName"
             - Name: PortraitLayout
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1721,6 +1907,86 @@ Children:
               Type: BaseDataVariableType
               DataType: Size
               ModellingRule: Optional
+            - Name: ScaleLayout1
+              Type: ScaleLayout
+              Children:
+              - Name: HistogramChart1
+                Type: HistogramChart
+                Children:
+                - Name: Model
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/responsive_ui/Model/Chart1"
+                  Children:
+                  - Name: ItemKind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Objects/responsive_ui/Model/Chart/Variable1"
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                - Name: Label
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}@BrowseName"
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}"
+                - Class: Reference
+                  Target: ns=3;i=1105
+                  Direction: Forward
+                - Name: Item
+                  Type: Alias
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Objects/responsive_ui/Model/Chart/Variable1"
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 3
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 3
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 50.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 50.0
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 50.0
+                - Name: BottomMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 65.0
+                - Name: Style
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ModellingRule: Optional
+                  Value: "HistogramChartStyle1"
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
@@ -2457,11 +2723,46 @@ Children:
     Children:
     - Name: Default
       Type: PieChartStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: HoleSizePercent
+        Type: BaseDataVariableType
+        DataType: Percentage
+        Value: 50.0
+    - Name: PieChartStyle1
+      Type: PieChartStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
   - Name: HistogramChartStyles
     Type: BaseObjectType
     Children:
     - Name: Default
       Type: HistogramChartStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: HistogramChartStyle1
+      Type: HistogramChartStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: Spacing
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: FontItalic
+        Type: BaseDataVariableType
+        DataType: Boolean
   - Name: LabelStyles
     Type: BaseObjectType
     Children:
