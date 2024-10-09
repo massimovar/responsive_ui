@@ -646,7 +646,7 @@ Children:
             ReferenceType: HasParameter
             ValueRank: OneDimension
             ArrayDimensions: [0]
-            Value: ["65fr","15fr"]
+            Value: ["85fr","15fr"]
           - Name: FalseValue
             Type: BaseDataVariableType
             DataType: String
