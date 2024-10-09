@@ -358,7 +358,7 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
-    - Name: SearchBar
+    - Name: header
       Type: Rectangle
       Children:
       - Name: BorderThickness
