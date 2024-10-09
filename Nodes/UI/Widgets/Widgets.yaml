@@ -71,7 +71,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 360.0
+    Value: 330.0
   - Name: ScaleLayout1
     Type: ScaleLayout
     Children:
@@ -179,4 +179,9 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
 - File: MenuItems/MenuItems.yaml

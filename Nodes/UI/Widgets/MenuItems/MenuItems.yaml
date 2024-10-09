@@ -763,7 +763,6 @@ Children:
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 2
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -887,7 +886,6 @@ Children:
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 2
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -931,7 +929,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 30.0
+      Value: 15.0
 - Name: MainMenuPortrait
   Id: g=a4d5f07b599864a454bae5e33e60f014
   Supertype: RowLayout
