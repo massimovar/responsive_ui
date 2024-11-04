@@ -177,52 +177,33 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
-    - Name: ConditionalConverter1
-      Type: ConditionalConverter
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
       Children:
-      - Name: Condition
+      - Name: Expression
         Type: BaseDataVariableType
-        DataType: Boolean
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{#WindowHeight} > {#WindowWidth}"
+      - Name: ns=2;SourceWindowHeight
+        Type: BaseDataVariableType
+        DataType: BaseDataType
         ReferenceType: HasSource
         Children:
-        - Name: ExpressionEvaluator1
-          Type: ExpressionEvaluator
-          Children:
-          - Name: Expression
-            Type: BaseDataVariableType
-            DataType: String
-            ReferenceType: HasParameter
-            ModellingRule: Optional
-            Value: "{#WindowHeight} > {#WindowWidth}"
-          - Name: ns=2;SourceWindowWidth
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Window}/Width"
-          - Name: ns=2;SourceWindowHeight
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Window}/Height"
-      - Name: TrueValue
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Window}/Height"
+      - Name: ns=2;SourceWindowWidth
         Type: BaseDataVariableType
-        DataType: Boolean
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: true
-      - Name: FalseValue
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ReferenceType: HasParameter
-        ModellingRule: Optional
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Window}/Width"
   - Name: FullScreen
     Type: BaseDataVariableType
     DataType: Boolean
